@@ -1,0 +1,71 @@
+/* General Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+  }
+  
+  /* Doctor Card */
+  .doctor-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Doctor Name */
+  .doctor-name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Doctor Information */
+  .doctor-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  .doctor-info span {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Book Appointment Button */
+  .book-button {
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .book-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Loading and Error */
+  .loading, .error {
+    text-align: center;
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+  }
+  

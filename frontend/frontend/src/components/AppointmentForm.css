@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Form Container */
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect on Form */
+  .form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 2rem;
+    color: #1e40af;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Input Fields */
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border 0.3s ease;
+  }
+  
+  input[type="date"]:focus,
+  select:focus {
+    border: 1px solid #1e40af;
+    outline: none;
+  }
+  
+  /* Labels */
+  label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Error Message */
+  .error {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #1e40af;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #b2c9e1;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  button:active:not(:disabled) {
+    background-color: #1e40af;
+    transform: scale(0.98);
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1e40af;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Loading Spinner Animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

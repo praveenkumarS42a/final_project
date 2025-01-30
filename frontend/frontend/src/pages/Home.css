@@ -1,0 +1,173 @@
+/* ✨ Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* ✨ Navbar Hover Effect */
+  @keyframes navHover {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* ✨ Button Glow Animation */
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+  }
+  
+  /* 🌈 Main Background */
+  .home-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  /* 🎯 Content Styling */
+  .home-content {
+    max-width: 50rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .home-content:hover {
+    transform: scale(1.02);
+  }
+  
+  /* 🔥 Title Animations */
+  .home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 📜 Description */
+  .home-description {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.9;
+  }
+  
+  /* 🌟 Buttons */
+  .button-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+  
+  .btn-primary {
+    background: #2563eb;
+    border: 2px solid #2563eb;
+  }
+  
+  .btn-primary:hover {
+    background: white;
+    color: #2563eb;
+    animation: glow 1s infinite alternate;
+  }
+  
+  .btn-secondary {
+    background: #10b981;
+    border: 2px solid #10b981;
+  }
+  
+  .btn-secondary:hover {
+    background: white;
+    color: #10b981;
+    animation: glow 1s infinite alternate;
+  }
+  
+  /* 🌟 Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #facc15;
+    animation: navHover 0.5s ease-in-out;
+  }
+  
+  /* 💎 Register Button */
+  .register-btn {
+    background: #facc15;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: black !important;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .register-btn:hover {
+    background: white;
+    color: black !important;
+    animation: glow 1s infinite alternate;
+  }
+  

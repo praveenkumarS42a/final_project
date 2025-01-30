@@ -1,0 +1,76 @@
+/* Navbar container styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar items container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo and brand name */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-decoration: none;
+  }
+  
+  /* Navbar links */
+  .navbar-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Link styles */
+  .navbar-link {
+    color: #4a5568;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .navbar-link:hover {
+    color: #2b6cb0;
+    background-color: #ebf8ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Button styles */
+  .navbar-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Specific button styles */
+  .logout-button {
+    background-color: #e53e3e;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c53030;
+  }
+  
+  .register-button {
+    background-color: #3182ce;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #2b6cb0;
+  }
+  

@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0f2fe, #f0f9ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container */
+  .register-container {
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .register-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Heading */
+  .register-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Labels */
+  .register-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: left;
+    color: #374151;
+  }
+  
+  /* Inputs */
+  .register-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .register-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0px 4px 8px rgba(37, 99, 235, 0.2);
+  }
+  
+  /* Error Message */
+  .register-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  
+  /* Button */
+  .register-button {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .register-button:hover {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    box-shadow: 0px 4px 12px rgba(30, 64, 175, 0.3);
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
